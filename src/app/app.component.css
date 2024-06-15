@@ -27,6 +27,7 @@ nav {
 
 .hidden {
   display: none !important;
+  color: #888da1;
 }
 
 .container.active .hidden {
