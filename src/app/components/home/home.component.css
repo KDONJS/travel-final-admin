@@ -1,0 +1,37 @@
+:root {
+    --table-background: #FFFFFF;
+    --primary: #101824;
+    --gray: #A8A7B1;
+    --odd-row: #f6f9ff;
+    --gray-mid: #F1F2F6;
+}
+.table-w{
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    padding: 24px;
+    border: 2px solid #EDEEF1;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.table-w table{
+    max-width: fit-content;
+    border-collapse: collapse;
+}
+
+.table-w caption{
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 8px 0px;
+}
+
+.table-w th{
+    padding: 20px 16px;
+    font-size: 0.875rem;
+    color: #A8A7B1;
+}
+
+.table-w thead {
+    border-top: 2px solid #EDEEF1;
+}

@@ -11,4 +11,5 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'travel-final-admin';
+  correo = 'yquispe@travel.pe';
 }
