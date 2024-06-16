@@ -2,7 +2,7 @@
     <table>
         <caption>
             Viajes a Perú
-            <span>Conteo de viajes a perú</span>
+            <span class="table-row-count">({{ teamMembers.length }}) Members</span>
         </caption>
         <thead>
             <tr>
@@ -12,14 +12,33 @@
                 <th>Tags</th>
             </tr>
         </thead>
-        <tbody id="team-member-rows">
-
+        <tbody>
+            <tr *ngFor="let member of mappedRecords">
+                <td class="team-member-profile">
+                    <img [src]="member.src" [alt]="member.name">
+                    <span class="profile-info">
+                        <span class="profile-info__name">{{ member.name }}</span>
+                        <span class="profile-info__alias">{{ member.alias }}</span>
+                    </span>
+                </td>
+                <td>
+                    <span class="status" [ngClass]="'status--' + member.status">{{ member.status }}</span>
+                </td>
+                <td>{{ member.mail }}</td>
+                <td>
+                    <span class="tags">
+                        <span *ngFor="let tag of member.tags" [ngClass]="'tag tag--' + tag">{{ tag }}</span>
+                    </span>
+                </td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="4">
                     <ul class="pagination">
-                        
+                        <li *ngFor="let page of pageNumbers">
+                            <a href="#" (click)="onPageChange(page)" [class.active]="page === start">{{ page }}</a>
+                        </li>
                     </ul>
                 </td>
             </tr>
