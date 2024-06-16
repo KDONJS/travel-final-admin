@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChartsComponent } from '../helper/charts/charts.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ChartsComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+
   teamMembers = [
     {
       src: 'img/peru.svg',
@@ -93,4 +97,5 @@ export class HomeComponent implements OnInit {
     this.start = page;
     this.updateTableRows();
   }
+
 }

@@ -5,6 +5,11 @@
     --odd-row: #f6f9ff;
     --gray-mid: #F1F2F6;
 }
+
+.contains {
+    display: flex;
+}
+
 .table-w{
     border-radius: 16px;
     background-color: #FFFFFF;
