@@ -11,23 +11,47 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit {
   teamMembers = [
     {
-      src: 'img/profile-pic.jpg',
-      name: 'Yorlin Quispe Ygnacio',
-      alias: '@Yorlin',
+      src: 'img/peru.svg',
+      name: 'Lima - Perú',
+      alias: '@Perú',
       mail: 'yquispe@travel.pe',
       status: 'active',
       tags: ['desing', 'QA']
     },
     {
-      src: 'img/profile-pic.jpg',
-      name: 'Yorlin Quispe Ygnacio',
-      alias: '@Yorlin',
+      src: 'img/colombia.svg',
+      name: 'Bogota - Colombia',
+      alias: '@Perú',
       mail: 'yquispe@travel.pe',
       status: 'inactive',
       tags: ['marketing', 'desing']
     },
     {
-      src: 'img/profile-pic.jpg',
+      src: 'img/colombia.svg',
+      name: 'Bogota - Colombia',
+      alias: '@Perú',
+      mail: 'yquispe@travel.pe',
+      status: 'offline',
+      tags: ['dev', 'QA']
+    },
+    {
+      src: 'img/peru.svg',
+      name: 'Lima - Perú',
+      alias: '@Perú',
+      mail: 'yquispe@travel.pe',
+      status: 'offline',
+      tags: ['dev', 'QA']
+    },
+    {
+      src: 'img/colombia.svg',
+      name: 'Bogota - Colombia',
+      alias: '@Perú',
+      mail: 'yquispe@travel.pe',
+      status: 'offline',
+      tags: ['dev', 'QA']
+    },
+    {
+      src: 'img/peru.svg',
       name: 'Yorlin Quispe Ygnacio',
       alias: '@Yorlin',
       mail: 'yquispe@travel.pe',
@@ -35,32 +59,8 @@ export class HomeComponent implements OnInit {
       tags: ['dev', 'QA']
     },
     {
-      src: 'img/profile-pic.jpg',
-      name: 'Yorlin Quispe Ygnacio',
-      alias: '@Yorlin',
-      mail: 'yquispe@travel.pe',
-      status: 'offline',
-      tags: ['dev', 'QA']
-    },
-    {
-      src: 'img/profile-pic.jpg',
-      name: 'Yorlin Quispe Ygnacio',
-      alias: '@Yorlin',
-      mail: 'yquispe@travel.pe',
-      status: 'offline',
-      tags: ['dev', 'QA']
-    },
-    {
-      src: 'img/profile-pic.jpg',
-      name: 'Yorlin Quispe Ygnacio',
-      alias: '@Yorlin',
-      mail: 'yquispe@travel.pe',
-      status: 'offline',
-      tags: ['dev', 'QA']
-    },
-    {
-      src: 'img/profile-pic.jpg',
-      name: 'Yorlin Quispe Ygnacio',
+      src: 'img/colombia.svg',
+      name: 'Bogota - Colombia',
       alias: '@Yorlin',
       mail: 'yquispe@travel.pe',
       status: 'offline',
